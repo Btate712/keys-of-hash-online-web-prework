@@ -4,9 +4,10 @@ class Hash
   def keys_of(*arguments)
     return_array = []
     arguments.each do |argument|
-    self.each do |key, value|
-      if value == argument
-        return_array.push(key)
+      self.each do |key, value|
+        if value == argument
+          return_array.push(key)
+        end
       end
     end
   return_array
