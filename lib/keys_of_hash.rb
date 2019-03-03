@@ -2,10 +2,10 @@ require 'pry'
 
 class Hash
   def keys_of(*arguments)
+    binding.pry 
     return_array = []
     arguments.each do |argument|
       this.each do |key, value|
-        binding.pry
         if value = argument
           return_array.push(key)
         end
