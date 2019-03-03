@@ -3,10 +3,11 @@ require 'pry'
 class Hash
   def keys_of(*arguments)
     return_array = []
-    arguments.each do |key, value|
-      binding.pry
-      if value = arguments
-        return_array.push(key)
+    arguments.each do |argument|
+      this.each do |key, value|
+        if value = argument
+          return_array.push(key)
+        end
       end
     end
   return_array
