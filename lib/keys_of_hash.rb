@@ -1,7 +1,10 @@
+require 'pry'
+
 class Hash
   def keys_of(*arguments)
     return_array = []
     arguments.each do |key, value|
+      binding.pry
       if value = arguments
         return_array.push(key)
       end
