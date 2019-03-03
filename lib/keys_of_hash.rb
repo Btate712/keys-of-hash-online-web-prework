@@ -4,12 +4,11 @@ class Hash
   def keys_of(*arguments)
     return_array = []
     arguments.each do |argument|
-    #search a hash for values that match argument and add them to return_array
-    binding.pry
-    #self.each do |key, value|
+    self.each do |key, value|
+      binding.pry 
     #   if value == argument
     #     return_array.push(key)
-    #   end
+      end
     end
   return_array
   end
